@@ -1,3 +1,14 @@
+<properties 
+	pageTitle="保留正在使用的VIP" 
+	description="本页介绍如何使用PowerShell来使用保留IP。" 
+	services="network" 
+	documentationCenter="" 
+	authors=""
+	manager="" 
+	editor=""/>
+
+<tags ms.service="network" ms.date="" wacn.date="12/15/2015"/>
+
 #保留正在使用的VIP
 ###本文包含以下内容
 * [适用场景](#prep)

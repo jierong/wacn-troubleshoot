@@ -13,11 +13,11 @@
 
 本文包含以下内容
 
-* 相关概念
-* 详细步骤
-* 推荐工具
+* [相关概念](#concept)
+* [详细步骤](#operation)
+* [推荐工具](#tool)
  
-##相关概念
+## <a id="concept"></a>相关概念
 
 **位置/地缘组**：中国版Azure有上海和北京中国东部和中国北部两个数据中心，我们可以选择其中的一个作为我们存储的位置。地缘组的概念就是将我们的存储和其他Azure服务放置在同一个数据中心，可以有效的提高我们的访问速度和降低成本。
 
@@ -42,7 +42,7 @@ Azure存储的命名规则可以阅读[这篇文章](http://blogs.msdn.com/b/jms
 
 **公共Blob**：匿名用户可以读取Blob，无法列出容器下的所有Blob
 
-##详细步骤##
+## <a id="operation"></a>详细步骤##
 
 1. 存储-数据服务-存储-快速创建（URL+位置地缘组+订阅+复制）-创建存储帐户![](./media/storage-how-to-create-account-container/create-account.png)
 2. Lib存储帐户-右箭头  ![](./media/storage-how-to-create-account-container/enter-storage.png)
@@ -53,5 +53,5 @@ Azure存储的命名规则可以阅读[这篇文章](http://blogs.msdn.com/b/jms
  
  
  
-##推荐工具##
+## <a id="tool"></a>推荐工具##
 Azure Store Explorer是一个不错的工具，可以让我们很直观的管理我们的存储，请点击[此处](https://azurestorageexplorer.codeplex.com/)下载。
