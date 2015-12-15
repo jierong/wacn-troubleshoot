@@ -12,23 +12,27 @@
 1. 下载并安装最新版的Azure PowerShell，配置Azure 管理账户。参考链接：[http://www.windowsazure.cn/documentation/articles/powershell-install-configure](http://www.windowsazure.cn/documentation/articles/powershell-install-configure) 
 2.	查看需要固定VIP的云服务信息
 
-	命令行：`PS C:\> get-azuredeployment -ServiceName` 其中sh3prd为云服务名称，可以看到当前的云服务ReservedIPName 为空。 
- ![](./media/network-how-to-use-reserved-ip/check-reserved-ip.jpg)
+	命令行：`PS C:\> get-azuredeployment -ServiceName` 其中sh3prd为云服务名称，可以看到当前的云服务ReservedIPName 为空。
+ 
+ 	![](./media/network-how-to-use-reserved-ip/check-reserved-ip.jpg)
  
 3.	保留VIP
 
 	命令行：	`PS C:\> New-AzureReservedIP -ServiceName sh3prd -ReservedIPName testRVIP -Location "China East"`
- ![](./media/network-how-to-use-reserved-ip/new-reserved-ip.jpg)
+
+ 	![](./media/network-how-to-use-reserved-ip/new-reserved-ip.jpg)
  
 4.	保留完成后检查一下是否是当前正在使用的VIP地址。 
 
 	命令行：`PS C:\> Get-AzureReservedIP -ReservedIPName testRVIP`
-![](./media/network-how-to-use-reserved-ip/double-check-reserved-ip.png)
+
+	![](./media/network-how-to-use-reserved-ip/double-check-reserved-ip.png)
  
 5.	再检查一下是否该云服务有保留VIP。
 
 	`PS C:\> Get-AzureDeployment -ServiceName sh3prd`
-![](./media/network-how-to-use-reserved-ip/triple-check-reserved-ip.jpg)
+
+	![](./media/network-how-to-use-reserved-ip/triple-check-reserved-ip.jpg)
  
 6.	在azure管理界面上关闭虚拟机后IP地址均不再显示在仪表板上。 但启动虚拟机后， VIP依旧是原来的地址。 
  
