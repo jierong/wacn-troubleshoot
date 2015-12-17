@@ -1,12 +1,12 @@
 <properties 
 	pageTitle="通过AzCopy操作Azure存储" 
 	description="本页介绍如何使用AzCopy操作storage。" 
-	services="paas" 
+	services="storage" 
 	documentationCenter="" 
 	authors=""
 	manager="" 
 	editor=""/>
-<tags ms.service="paas" ms.date="" wacn.date="12/17/2015"/>
+<tags ms.service="storage" ms.date="" wacn.date="12/17/2015"/>
 
 #通过AzCopy操作Azure存储
 
@@ -23,7 +23,7 @@
 ## <a id="operation"></a>详细步骤
 1.	打开Microsoft Azure Command Prompt.
  
-	![](./media/paas-how-to-use-azcopy/azure-command-prompt-tool.png)
+	![](./media/storage-how-to-use-azcopy/azure-command-prompt-tool.png)
 
 2.	使用 `cd %ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy` 定位到AzCopy的安装目录， 64-bit Window为 `%ProgramFiles(x86)%\Microsoft SDKs\Azure\`，32-bit Windows 为 `%ProgramFiles%\Microsoft SDKs\Azure\`. 
 
