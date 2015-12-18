@@ -79,10 +79,11 @@ Register-ScheduledTask -TaskName $TaskName -InputObject $stopScheduledTask
 </code></pre>
 
 还是刚才那个文件，右键用PowerShell运行，按PowerShell提示输入四个必要的参数：
-VMName, 要关闭的Virtual Machine名称
-ServiceName, 关联的服务名称
-TaskName, 任务名称
-At，具体操作时间
+
+* VMName, 要关闭的Virtual Machine名称
+* ServiceName, 关联的服务名称
+* TaskName, 任务名称
+* At，具体操作时间
 
 ![](./media/virtualmachine-how-to-turn-off-vm-automatically/powershell-add-parameter.png)
 
