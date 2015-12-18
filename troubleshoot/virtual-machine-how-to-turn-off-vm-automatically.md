@@ -1,12 +1,12 @@
 <properties 
 	pageTitle="自动化实现定时关闭虚拟机" 
 	description="在虚拟机中配置如何定时关闭虚拟机" 
-	services="virtualmachine" 
+	services="virtual machine" 
 	documentationCenter="" 
 	authors=""
 	manager="" 
 	editor=""/>
-<tags ms.service="virtualmachine" ms.date="" wacn.date="12/18/2015"/>
+<tags ms.service="virtual machine" ms.date="" wacn.date="12/18/2015"/>
 
 
 #自动化实现定时关闭虚拟机
@@ -85,18 +85,18 @@ Register-ScheduledTask -TaskName $TaskName -InputObject $stopScheduledTask
 * TaskName, 任务名称
 * At，具体操作时间
 
-![](./media/virtualmachine-how-to-turn-off-vm-automatically/powershell-add-parameter.png)
+![](./media/virtual-machine-how-to-turn-off-vm-automatically/powershell-add-parameter.png)
 
  
 然后到计划任务列表里就能刷出这个定时关机的任务了，可以测一下：
 
-![](./media/virtualmachine-how-to-turn-off-vm-automatically/powershell-add-task-to-system.png)
+![](./media/virtual-machine-how-to-turn-off-vm-automatically/powershell-add-task-to-system.png)
  
 到指定时候后PowerShell开始关机。
 
-![](./media/virtualmachine-how-to-turn-off-vm-automatically/powershell-turn-down-vm.png)
+![](./media/virtual-machine-how-to-turn-off-vm-automatically/powershell-turn-down-vm.png)
  
 到Portal里验证一下，已经成功关机了.
  
 
-![](./media/virtualmachine-how-to-turn-off-vm-automatically/powershell-turn-down-result.png)
+![](./media/virtual-machine-how-to-turn-off-vm-automatically/powershell-turn-down-result.png)
