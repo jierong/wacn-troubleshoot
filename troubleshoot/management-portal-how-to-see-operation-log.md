@@ -1,12 +1,12 @@
 <properties 
 	pageTitle="如何通过管理服务查看在管理门户中执行的相关操作记录" 
 	description="本文介绍如何通过管理服务查看在管理门户中执行的相关操作记录" 
-	services="management" 
+	services="management portal" 
 	documentationCenter="" 
 	authors=""
 	manager="" 
 	editor=""/>
-<tags ms.service="management" ms.date="" wacn.date="12/18/2015"/>
+<tags ms.service="management portal" ms.date="" wacn.date="12/18/2015"/>
 
 
 #如何通过管理服务查看在管理门户中执行的相关操作记录
@@ -32,12 +32,12 @@
 
 1. 登录Azure 门户网站，选择云服务
 
-	![](./media/management-how-to-see-operation-log/choose-service.jpg)
+	![](./media/management-portal-how-to-see-operation-log/choose-service.jpg)
  
 - 选择要查看的云服务->仪表板，可以查看相关的操作日志和启动日志
 
-	![](./media/management-how-to-see-operation-log/open-log-from-dashboard.jpg)
+	![](./media/management-portal-how-to-see-operation-log/open-log-from-dashboard.jpg)
  
 - 选择要查看哪个时间段的操作记录
 
-	![](./media/management-how-to-see-operation-log/direct-to-management-service.jpg)
+	![](./media/management-portal-how-to-see-operation-log/direct-to-management-service.jpg)

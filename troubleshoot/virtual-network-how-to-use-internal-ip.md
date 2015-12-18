@@ -1,12 +1,12 @@
 <properties 
 	pageTitle="使用Powershell设置VNET中的静态IP" 
 	description="本页介绍如何使用PowerShell来使用静态IP。" 
-	services="network" 
+	services="virtual network" 
 	documentationCenter="" 
 	authors=""
 	manager="" 
 	editor=""/>
-<tags ms.service="network" ms.date="" wacn.date="12/16/2015"/>
+<tags ms.service="virtual network" ms.date="" wacn.date="12/16/2015"/>
 
 #使用Powershell设置VNET中的静态IP 
 
