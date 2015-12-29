@@ -16,7 +16,10 @@
                     <div style="margin-top:20px;"><span style="line-height:16px;">介绍如何使用Powershell创建定时关闭虚拟机功能。</span></div>
                     <div style="margin-top:30px;"><a href="/documentation/articles/troubleshoot/virtual-machine-add-vm-to-availability-group" style="font-size:18px;">将虚拟机添加到可用性集中</a></div>
                     <div style="margin-top:15px;"><span style="font-weight:normal;font-size:15px;line-height:15px;"> 更新日期: 12/18/2015 </span></div>
-                    <div style="margin-top:20px;"><span style="line-height:16px;">介绍可用性集的概念，演示如何将虚拟机添加到可用性集中。</span></div> <p></p>
+                    <div style="margin-top:20px;"><span style="line-height:16px;">介绍可用性集的概念，演示如何将虚拟机添加到可用性集中。</span></div>
+					<div style="margin-top:30px;"><a href="/documentation/articles/troubleshoot/virtual-machine-add-vm-to-availability-group" style="font-size:18px;">用Azure Automation实现自动开关虚拟机的操作</a></div>
+                    <div style="margin-top:15px;"><span style="font-weight:normal;font-size:15px;line-height:15px;"> 更新日期: 12/29/2015 </span></div>
+                    <div style="margin-top:20px;"><span style="line-height:16px;">介绍如何使用Azure Automation来自动实现开启或者关闭虚拟机。</span></div>
                 </div>
             </div>
             <div style="width:410px; float:right">
