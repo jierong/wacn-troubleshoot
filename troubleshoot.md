@@ -1,9 +1,12 @@
 <properties linkid="troubleshoot" urlDisplayName="troubleshoot" pageTitle="故障排除" metaKeywords="troubleshoot" disableRightNav="true" description="" metaCanonical="" services="" documentationCenter="" title="" authors="" solutions="" manager="" editor="" />
-<tags ms.service="" ms.date="" wacn.date="12/29/2015"/>
+<tags ms.service="" ms.date="" wacn.date=""/>
 
 #故障排除
 
- <div style="margin: 0px auto;">        
+ <div style="margin: 0px auto;">
+        <div style="width:880px">
+            <div style="margin-top:30px;"><span style="font-weight:normal;font-size:15px;"> 最后更新日间（中文版）: 12/23/2015 </span></div>
+        </div>        
         <div style="width: 880px;margin-top:40px;">
             <div style="width: 428px;  margin-right: 42px;  display: inline-block;">
                 <div style="width: 404px;">
