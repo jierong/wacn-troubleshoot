@@ -1,12 +1,22 @@
+<properties 
+	pageTitle="使用NSG实现DMZ区域" 
+	description="本页介绍如何使用Powershell 指令构建NSG" 
+	services="virtual network" 
+	documentationCenter="" 
+	authors=""
+	manager="" 
+	editor=""/>
+<tags ms.service="virtual network" ms.date="" wacn.date="1/4/2016"/>
+
 #使用NSG实现DMZ区域
 
 ###本文包含以下内容
-- 详细操作
-- PowerShell指令详解
-- 关于NSG使用的一些说明
-- 相关参考资料
+- [详细操作](#detail)
+- [PowerShell指令详解](#command)
+- [关于NSG使用的一些说明](#description)
+- [相关参考资料](#resource)
  
-##详细操作
+## <a id="detail"></a>详细操作
  
 1. 首先需要创建一个虚拟网络：</br>
    以下面的网络为例：</br>
@@ -79,7 +89,7 @@
 
  	 ![](./media/virtual-network-use-nsg-dmz/db-nsg-detail.png) 
 
-##PowerShell指令详解
+##  <a id="command"></a>PowerShell指令详解
 对下面这个命令的一些参数做一下简单说明：
 
 		Set-AzureNetworkSecurityRule -Name "DB-DMZ" -Type Outbound -Priority 300 -Action Deny -SourceAddressPrefix "10.0.0.64/27" -SourcePortRange * -DestinationAddressPrefix "10.0.0.0/27" -DestinationPortRange * -Protocol TCP;
@@ -98,13 +108,13 @@
 **SourcePortRange和DestinationPortRange**：源和目的端口，通常为具体的端口号或者*（代表任何端口）<br>
 **Protocol**：TCP或者UDP协议
 
-##关于NSG使用的一些说明
+##  <a id="description"></a>关于NSG使用的一些说明
 1.	如果NSG应用到虚拟机上，那么必须删除该虚拟机所有的ACL，即对于虚拟机ACL和NSG不能并存。
 2.	如果NSG应用到虚拟机所在的子网上，那么仍然可以为虚拟机配置ACL。
 3.	配置了NSG后，虚拟网络中如果设置了规则的线路就无法ping通了（因为规则只允许TCP或者UDP协议），例如上面的例子中，Subnet-1和Subnet-2中的虚拟机可以使用Psping来测试连通性，ping命令会超时。
 4.	当设置规则的时候，对于虚拟机或者虚拟网络来说，指定开放或者屏蔽端口的时候，需要使用内网端口，不存在NAT转换。
  
-##参考文档
+##  <a id="resrouce"></a>参考文档
 
 - [什么事网络安全组](http://www.windowsazure.cn/documentation/articles/virtual-networks-nsg)
 - [如何在 PowerShell 中创建 NSG（经典）](http://wacn-ppe.chinacloudsites.cn/documentation/articles/virtual-networks-create-nsg-classic-ps)

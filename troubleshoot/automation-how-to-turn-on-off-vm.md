@@ -12,12 +12,12 @@
  
 ###本文包含以下内容
 
-- 如何创建自动化账号和Runbook
-- 如何创建凭据
-- 如何添加作业及执行计划
-- 更多参考资料
+- [如何创建自动化账号和Runbook](#create)
+- [如何创建凭据](#certification)
+- [如何添加作业及执行计划](#scheduler)
+- [更多参考资料](#resource)
  
-##如何创建自动化账号和Runbook
+## <a id="create"></a>如何创建自动化账号和Runbook
  
 关于Azure Automation功能的使用请参考链接：
 http://www.windowsazure.cn/documentation/articles/automation-create-runbook-from-samples/
@@ -42,7 +42,7 @@ http://www.windowsazure.cn/documentation/articles/automation-create-runbook-from
 
 ![](./media/automation-how-to-turn-on-off-vm/runbook-list.jpg) 
 
-##如何创建凭据
+## <a id="certification"></a>如何创建凭据
  
 接着我们在ASSETS选项中添加一个Credential：
 
@@ -64,7 +64,7 @@ http://www.windowsazure.cn/documentation/articles/automation-create-runbook-from
 
 完成后保存。
  
-##如何添加作业及执行计划
+## <a id="scheduler"></a>如何添加作业及执行计划
  
 接着进入之前创建的Runbook中，切换到AUTHOR选项卡，点击EDIT RUNBOOK：
 
@@ -127,7 +127,7 @@ JOB执行结束后，可以看到我们的虚拟机已经成功启动了。
 需要注意的是，这里Stop-AzureVM这个命令一定要添加-Force参数，不然在命令执行的时候会停在确认是否要关闭虚拟机的界面而无法完成关闭操作。
 后面的配置操作与前面Start的类似，这里就不赘述了。
  
-##更多参考资料
+## <a id="resource"></a>更多参考资料
 
 关于ASSETS的说明
 
