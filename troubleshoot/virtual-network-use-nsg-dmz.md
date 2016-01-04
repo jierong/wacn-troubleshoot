@@ -33,7 +33,7 @@
    大致的拓扑关系如下（红色表示不通，绿色标识连通）：<br>
    ![](./media/virtual-network-use-nsg-dmz/nsg-relation.png)<br>
  
-3. 针对三个子网配置NSG的完整脚本如下：
+3. 针对三个子网配置NSG，脚本如下：
 
 		# Address Space 10.0.0.0/24<br>
 		# Subnet-1 10.0.0.0/27<br>
@@ -95,17 +95,24 @@
 		Set-AzureNetworkSecurityRule -Name "DB-DMZ" -Type Outbound -Priority 300 -Action Deny -SourceAddressPrefix "10.0.0.64/27" -SourcePortRange * -DestinationAddressPrefix "10.0.0.0/27" -DestinationPortRange * -Protocol TCP;
 
 
-**Name**：指定过滤规则的名称<br>
-**Type**：Inbound和Outbound，指相对VM或者Subnet而言是向内还是向外的流量<br>
-**Priority**：规则的优先级，值越小越先匹配<br>
-**Action**：Allow和Deny，指如果规则匹配，那么允许或者拒绝该流量<br>
-**SourceAddressPrefix和DestinationAddressPrefix**：访问的源和目的IP段，通常有下面几种取值：<br>
-**CIDR地址**：例如10.0.0.0/27这种子网网段或者公网IP段都可以<br>
-\*：表示任何IP<br>
-**VIRTUAL_NETWORK**：表示所在虚拟网络内的IP地址<br>
-**INTERNET**：公网IP地址<br>
-**ZURE_LOADBALANCER**：Azure的负载均衡转发过来的流量<br>
-**SourcePortRange和DestinationPortRange**：源和目的端口，通常为具体的端口号或者*（代表任何端口）<br>
+**Name**：指定过滤规则的名称
+
+**Type**：Inbound和Outbound，指相对VM或者Subnet而言是向内还是向外的流量
+
+**Priority**：规则的优先级，值越小越先匹配
+
+**Action**：Allow和Deny，指如果规则匹配，那么允许或者拒绝该流量
+
+**SourceAddressPrefix和DestinationAddressPrefix**：访问的源和目的IP段，通常有下面几种取值：
+
+- **CIDR地址**：例如10.0.0.0/27这种子网网段或者公网IP段都可以
+- \*：表示任何IP
+- **VIRTUAL_NETWORK**：表示所在虚拟网络内的IP地址
+- **INTERNET**：公网IP地址
+**ZURE_LOADBALANCER**：Azure的负载均衡转发过来的流量
+
+**SourcePortRange和DestinationPortRange**：源和目的端口，通常为具体的端口号或者*（代表任何端口）
+
 **Protocol**：TCP或者UDP协议
 
 ##  <a id="description"></a>关于NSG使用的一些说明
