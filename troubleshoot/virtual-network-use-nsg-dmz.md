@@ -22,9 +22,11 @@
    以下面的网络为例：</br>
    虚拟网络名称：DanielEastVNet</br>
    子网划分：
-   ![](./media/virtual-network-use-nsg-dmz/subnet.png)<br>
+
+	![](./media/virtual-network-use-nsg-dmz/subnet.png)<br>
    每个子网部署1台虚拟机：
-   ![](./media/virtual-network-use-nsg-dmz/subnet-and-vm.png)<br>
+
+	![](./media/virtual-network-use-nsg-dmz/subnet-and-vm.png)<br>
 2. 接下来要实现下面的策略：<br>
    Subnet-1面向公网，但是公网仅可以访问Subnet-1中虚拟机的80/5986/3389/23端口，从Subnet-1访问公网不受限。<br>
    Subnet-1可以与Subnet-2通信，Subnet-1不能与Subnet-3通信。<br>
