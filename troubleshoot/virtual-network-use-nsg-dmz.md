@@ -25,7 +25,7 @@
    ![](./media/virtual-network-use-nsg-dmz/subnet.png)<br>
    每个子网部署1台虚拟机：
    ![](./media/virtual-network-use-nsg-dmz/subnet-and-vm.png)<br>
-2. 接下来要实现下面的策略：
+2. 接下来要实现下面的策略：<br>
    Subnet-1面向公网，但是公网仅可以访问Subnet-1中虚拟机的80/5986/3389/23端口，从Subnet-1访问公网不受限。<br>
    Subnet-1可以与Subnet-2通信，Subnet-1不能与Subnet-3通信。<br>
    Subnet-2可以与Subnet-1和Subnet-3通信，Subnet-2屏蔽掉公网（进出流量都被屏蔽）。<br>
@@ -123,7 +123,7 @@
  
 ##  <a id="resrouce"></a>参考文档
 
-- [什么事网络安全组](http://www.windowsazure.cn/documentation/articles/virtual-networks-nsg)
+- [网络安全组](http://www.windowsazure.cn/documentation/articles/virtual-networks-nsg)
 - [如何在 PowerShell 中创建 NSG（经典）](http://wacn-ppe.chinacloudsites.cn/documentation/articles/virtual-networks-create-nsg-classic-ps)
 
 
