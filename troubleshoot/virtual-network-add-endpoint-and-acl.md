@@ -1,3 +1,4 @@
+
 <properties 
 	pageTitle="虚拟机添加相应端口并配置ACL" 
 	description="本页介绍如何为虚拟机添加相应端口并配置ACL。" 
@@ -11,10 +12,11 @@
 #虚拟机添加相应端口并配置ACL
 
 ###本文包含以下内容
-- 相关概念
-- 详细步骤
+- [相关概念](#concept)
+- [详细步骤](#detail)
+- [相关参考资料](#resource)
  
-##相关概念
+## <a id="concept"></a>相关概念
 
 添加端口时我们需要输入公用端口和私有端口，下面是它们的相关概念。
 
@@ -28,7 +30,7 @@
 
 还以上面为例，如果我们为了保证数据库的安全，我们可以以CIDR 格式来指定 IP 地址范围，这样可以使得只有在允许的IP范围的用户来访问，可以有效的避免数据的泄露。
  
-##详细步骤
+## <a id="detail"></a>详细步骤
 
 ###创建端口
 
@@ -57,3 +59,7 @@
 2. 添加允许或拒绝的远程子网
 
 	![](./media/virtual-network-add-endpoint-and-acl/add-acl.jpg)
+
+## <a id="resource"></a>相关参考资料
+
+- [如何设置虚拟机的终结点](http://www.windowsazure.cn/documentation/articles/virtual-machines-set-up-endpoints/)
