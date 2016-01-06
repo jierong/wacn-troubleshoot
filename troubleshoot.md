@@ -55,6 +55,12 @@
                     <div style="margin-top:25px;"><a href="/documentation/articles/troubleshoot/virtual-network-how-to-use-reserved-ip" style="font-size:16px;font-family:'Microsoft YaHei';">保留正在使用的VIP</a></div>
                     <div style="margin-top:10px;"><span style="font-weight:normal;font-size:14px;font-family:'Microsoft YaHei';"> 更新日期: 12/18/2015 </span></div>
                     <div style="margin-top:15px;"><span style="font-family:'Microsoft YaHei';font-size:14px">介绍保留IP的相关概念，演示如何使用Powershell来操作保留IP。</span></div>
+					<div style="margin-top:25px;"><a href="/documentation/articles/troubleshoot/virtual-network-use-nsg-dmz" style="font-size:16px;font-family:'Microsoft YaHei';">使用NSG实现DMZ区域</a></div>
+                    <div style="margin-top:10px;"><span style="font-weight:normal;font-size:14px;font-family:'Microsoft YaHei';"> 更新日期: 1/4/2016 </span></div>
+                    <div style="margin-top:15px;"><span style="font-family:'Microsoft YaHei';font-size:14px">演示以Powershell的方式使用NSG实现DMZ区域，并对相关Powershell指令做一些说明。</span></div>
+					<div style="margin-top:25px;"><a href="/documentation/articles/tvirtual-network-add-endpoint-and-acl" style="font-size:16px;font-family:'Microsoft YaHei';">虚拟机添加相应端口并配置ACL</a></div>
+                    <div style="margin-top:10px;"><span style="font-weight:normal;font-size:14px;font-family:'Microsoft YaHei';"> 更新日期: 1/5/2016 </span></div>
+                    <div style="margin-top:15px;"><span style="font-family:'Microsoft YaHei';font-size:14px">演示如何添加端口，并对相关的端口配置ACL</span></div>
                 </div>
             </div>
         </div>
