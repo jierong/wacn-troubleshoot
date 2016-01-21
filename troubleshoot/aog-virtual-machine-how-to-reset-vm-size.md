@@ -29,11 +29,11 @@
 
 1. 虚拟机-(本例)VNET-BJMOSES-01
  
-	![](./media/virtual-machine-how-to-reset-vm-size/choose-vm.png)
+	![](./media/aog-virtual-machine-how-to-reset-vm-size/choose-vm.png)
  
 2. 配置-虚拟机大小
 
-	![](./media/virtual-machine-how-to-reset-vm-size/reset-vm-size.png)
+	![](./media/aog-virtual-machine-how-to-reset-vm-size/reset-vm-size.png)
 
 **请注意**：在调整虚拟机的尺寸后，虚拟机需要重新启动！
  

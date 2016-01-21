@@ -24,20 +24,20 @@
 
 1. 虚拟机-(本例)VNET-BJMOSES-01
 
-	![](./media/virtual-machine-add-vm-to-availability-group/choose-vm.png) 
+	![](./media/aog-virtual-machine-add-vm-to-availability-group/choose-vm.png) 
  
 2. 配置-可用性集-保存（在“可用性集”中，选择“创建可用性集”，在“可用性集名称”中，输入可用性集的名称，单击保存创建可用性集）
 
-	![](./media/virtual-machine-add-vm-to-availability-group/open-vm-config.png) 
+	![](./media/aog-virtual-machine-add-vm-to-availability-group/open-vm-config.png) 
  
 3. 第二台VM-配置-可用性集（本例：MYVM）-保存
 
 	
-	![](./media/virtual-machine-add-vm-to-availability-group/add-to-aviliablily.png) 
+	![](./media/aog-virtual-machine-add-vm-to-availability-group/add-to-aviliablily.png) 
  
 4. 从新虚拟机的仪表板中，单击“配置”，您会看到该虚拟机现在是新可用性集的一个成员
 
-	![](./media/virtual-machine-add-vm-to-availability-group/show-result.jpg) 
+	![](./media/aog-virtual-machine-add-vm-to-availability-group/show-result.jpg) 
  
 ## <a id="note"></a>注意事项
 

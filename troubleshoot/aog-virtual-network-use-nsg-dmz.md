@@ -23,17 +23,17 @@
    虚拟网络名称：DanielEastVNet</br>
    子网划分：
 
-	![](./media/virtual-network-use-nsg-dmz/subnet.png)<br>
+	![](./media/aog-virtual-network-use-nsg-dmz/subnet.png)<br>
    每个子网部署1台虚拟机：
 
-	![](./media/virtual-network-use-nsg-dmz/subnet-and-vm.png)<br>
+	![](./media/aog-virtual-network-use-nsg-dmz/subnet-and-vm.png)<br>
 2. 接下来要实现下面的策略：<br>
    Subnet-1面向公网，但是公网仅可以访问Subnet-1中虚拟机的80/5986/3389/23端口，从Subnet-1访问公网不受限。<br>
    Subnet-1可以与Subnet-2通信，Subnet-1不能与Subnet-3通信。<br>
    Subnet-2可以与Subnet-1和Subnet-3通信，Subnet-2屏蔽掉公网（进出流量都被屏蔽）。<br>
    Subnet-3可以与Subnet-2通信，不能与Subnet-1通信。Subnet-3屏蔽掉公网（进出流量都被屏蔽）。<br>
    大致的拓扑关系如下（红色表示不通，绿色标识连通）：<br>
-   ![](./media/virtual-network-use-nsg-dmz/nsg-relation.png)<br>
+   ![](./media/aog-virtual-network-use-nsg-dmz/nsg-relation.png)<br>
  
 3. 针对三个子网配置NSG，脚本如下：
 
@@ -85,11 +85,11 @@
 		Get-AzureNetworkSecurityGroup -Name "DBNSG" -Detailed 
  
      设置完成后规则列表如下：
- 	 ![](./media/virtual-network-use-nsg-dmz/dmznsg-detail.png)
+ 	 ![](./media/aog-virtual-network-use-nsg-dmz/dmznsg-detail.png)
 
- 	 ![](./media/virtual-network-use-nsg-dmz/backend-nsg-detail.png)
+ 	 ![](./media/aog-virtual-network-use-nsg-dmz/backend-nsg-detail.png)
 
- 	 ![](./media/virtual-network-use-nsg-dmz/db-nsg-detail.png) 
+ 	 ![](./media/aog-virtual-network-use-nsg-dmz/db-nsg-detail.png) 
 
 ##  <a id="command"></a>PowerShell指令详解
 对下面这个命令的一些参数做一下简单说明：

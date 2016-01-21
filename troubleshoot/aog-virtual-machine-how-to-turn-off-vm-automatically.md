@@ -85,18 +85,18 @@ Register-ScheduledTask -TaskName $TaskName -InputObject $stopScheduledTask
 * TaskName, 任务名称
 * At，具体操作时间
 
-![](./media/virtual-machine-how-to-turn-off-vm-automatically/powershell-add-parameter.png)
+![](./media/aog-virtual-machine-how-to-turn-off-vm-automatically/powershell-add-parameter.png)
 
  
 然后到计划任务列表里就能刷出这个定时关机的任务了，可以测一下：
 
-![](./media/virtual-machine-how-to-turn-off-vm-automatically/powershell-add-task-to-system.png)
+![](./media/aog-virtual-machine-how-to-turn-off-vm-automatically/powershell-add-task-to-system.png)
  
 到指定时候后PowerShell开始关机。
 
-![](./media/virtual-machine-how-to-turn-off-vm-automatically/powershell-turn-down-vm.png)
+![](./media/aog-virtual-machine-how-to-turn-off-vm-automatically/powershell-turn-down-vm.png)
  
 到Portal里验证一下，已经成功关机了.
  
 
-![](./media/virtual-machine-how-to-turn-off-vm-automatically/powershell-turn-down-result.png)
+![](./media/aog-virtual-machine-how-to-turn-off-vm-automatically/powershell-turn-down-result.png)

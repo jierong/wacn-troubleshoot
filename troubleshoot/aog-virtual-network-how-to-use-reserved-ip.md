@@ -25,25 +25,25 @@
 
 	命令行：`PS C:\> get-azuredeployment -ServiceName` 其中sh3prd为云服务名称，可以看到当前的云服务ReservedIPName 为空。
  
- 	![](./media/virtual-network-how-to-use-reserved-ip/check-reserved-ip.jpg)
+ 	![](./media/aog-virtual-network-how-to-use-reserved-ip/check-reserved-ip.jpg)
  
 3.	保留VIP
 
 	命令行：	`PS C:\> New-AzureReservedIP -ServiceName sh3prd -ReservedIPName testRVIP -Location "China East"`
 
- 	![](./media/virtual-network-how-to-use-reserved-ip/new-reserved-ip.jpg)
+ 	![](./media/aog-virtual-network-how-to-use-reserved-ip/new-reserved-ip.jpg)
  
 4.	保留完成后检查一下是否是当前正在使用的VIP地址。 
 
 	命令行：`PS C:\> Get-AzureReservedIP -ReservedIPName testRVIP`
 
-	![](./media/virtual-network-how-to-use-reserved-ip/double-check-reserved-ip.png)
+	![](./media/aog-virtual-network-how-to-use-reserved-ip/double-check-reserved-ip.png)
  
 5.	再检查一下是否该云服务有保留VIP。
 
 	`PS C:\> Get-AzureDeployment -ServiceName sh3prd`
 
-	![](./media/virtual-network-how-to-use-reserved-ip/triple-check-reserved-ip.jpg)
+	![](./media/aog-virtual-network-how-to-use-reserved-ip/triple-check-reserved-ip.jpg)
  
 6.	在azure管理界面上关闭虚拟机后IP地址均不再显示在仪表板上。 但启动虚拟机后， VIP依旧是原来的地址。 
  

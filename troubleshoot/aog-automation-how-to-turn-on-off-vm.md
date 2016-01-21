@@ -24,41 +24,41 @@ http://www.windowsazure.cn/documentation/articles/automation-create-runbook-from
  
 首先，我们需要创建一个自动化账号（Automation Account）：
 
-![](./media/automation-how-to-turn-on-off-vm/create-automation-account.jpg) 
+![](./media/aog-automation-how-to-turn-on-off-vm/create-automation-account.jpg) 
 
 在弹出的界面中填写自动化账号名称（用户随便定义一个即可），选择区域以及订阅：
 
-![](./media/automation-how-to-turn-on-off-vm/create-automation-account-step2.jpg) 
+![](./media/aog-automation-how-to-turn-on-off-vm/create-automation-account-step2.jpg) 
 
 完成后就能够在列表中看到这个自动化账号，接着点击左下角“创建”按钮创建一个Runbook：
 
-![](./media/automation-how-to-turn-on-off-vm/create-autionmation-runbook.jpg)  
+![](./media/aog-automation-how-to-turn-on-off-vm/create-autionmation-runbook.jpg)  
 
 创建完成后点击进入这个账号：
 
-![](./media/automation-how-to-turn-on-off-vm/entry-automation.jpg) 
+![](./media/aog-automation-how-to-turn-on-off-vm/entry-automation.jpg) 
 
 可以看到刚刚创建的Runbook：
 
-![](./media/automation-how-to-turn-on-off-vm/runbook-list.jpg) 
+![](./media/aog-automation-how-to-turn-on-off-vm/runbook-list.jpg) 
 
 ## <a id="certification"></a>如何创建凭据
  
 接着我们在ASSETS选项中添加一个Credential：
 
-![](./media/automation-how-to-turn-on-off-vm/create-credential.jpg) 
+![](./media/aog-automation-how-to-turn-on-off-vm/create-credential.jpg) 
 
 在弹出的界面中选择ADD CREDENTIAL：
 
-![](./media/automation-how-to-turn-on-off-vm/select-credential-type.jpg)  
+![](./media/aog-automation-how-to-turn-on-off-vm/select-credential-type.jpg)  
 
 填写Credential的类型以及名称：
 
-![](./media/automation-how-to-turn-on-off-vm/define-credential.jpg)  
+![](./media/aog-automation-how-to-turn-on-off-vm/define-credential.jpg)  
 
 填写用到的用户名和密码（这里是管理Azure的用户名和密码）：
 
-![](./media/automation-how-to-turn-on-off-vm/define-credential-name-password.jpg)
+![](./media/aog-automation-how-to-turn-on-off-vm/define-credential-name-password.jpg)
 
 **注意**： 这个步骤中的用户是通过AAD创建出来的，我们可以参考[这个链接](https://msdn.microsoft.com/library/azure/hh967632.aspx)来了解如何创建AAD用户。本例子是使用管理账号来做的， 
 
@@ -68,7 +68,7 @@ http://www.windowsazure.cn/documentation/articles/automation-create-runbook-from
  
 接着进入之前创建的Runbook中，切换到AUTHOR选项卡，点击EDIT RUNBOOK：
 
-![](./media/automation-how-to-turn-on-off-vm/edit-runbook.jpg)   
+![](./media/aog-automation-how-to-turn-on-off-vm/edit-runbook.jpg)   
 
 在弹出的编辑界面中输入下面的代码：
 
@@ -85,32 +85,32 @@ workflow后面的DanRunbook需要与你的Runbook的名称一致，请按照实�
  
 创建完成后我们点击PUBLISH，将这段脚本发布为正式版本：
 
-![](./media/automation-how-to-turn-on-off-vm/publish-runbook.jpg)
+![](./media/aog-automation-how-to-turn-on-off-vm/publish-runbook.jpg)
  
 注：这里也可以点击TEST（测试）先测试一下脚本的执行情况，确认无误后再点击PUBLISH。
 
 发布完成后，我们在PUBLISHED选项卡中看到发布的正式脚本，可以点击START（开始）执行这个脚本：
  
-![](./media/automation-how-to-turn-on-off-vm/start-runbook.jpg)
+![](./media/aog-automation-how-to-turn-on-off-vm/start-runbook.jpg)
 
 执行完成后，会对应的生成一个JOB（作业），这里我们脚本测试了两次，所以有两条JOB记录：
 
-![](./media/automation-how-to-turn-on-off-vm/runbook-result.jpg)
+![](./media/aog-automation-how-to-turn-on-off-vm/runbook-result.jpg)
 
 点击JOB右侧的白色箭头可以进入到JOB中查看具体的执行情况和输出结果。
 JOB执行结束后，可以看到我们的虚拟机已经成功启动了。
  
 接着我们为RUNBOOK添加一个执行计划：
 
-![](./media/automation-how-to-turn-on-off-vm/create-shedule.jpg)
+![](./media/aog-automation-how-to-turn-on-off-vm/create-shedule.jpg)
  
 选择LINK TO A NEW SCHEDULE，填写一个计划名称：
 
-![](./media/automation-how-to-turn-on-off-vm/config-schedule.jpg) 
+![](./media/aog-automation-how-to-turn-on-off-vm/config-schedule.jpg) 
 
 设置一个执行周期：
 
-![](./media/automation-how-to-turn-on-off-vm/config-shedule-detail.jpg)
+![](./media/aog-automation-how-to-turn-on-off-vm/config-shedule-detail.jpg)
 
 例如这里根据上面截图中的设置，这个RUNBOOK会在2015年8月25日到2015年10月1日每天的12:00执行，如果不希望设置过期时间，可以取消SCHEDULE EXPIRES ON的勾选。
  

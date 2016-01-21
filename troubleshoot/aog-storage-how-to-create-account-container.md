@@ -44,12 +44,12 @@ Azure存储的命名规则可以阅读[这篇文章](http://blogs.msdn.com/b/jms
 
 ## <a id="operation"></a>详细步骤##
 
-1. 存储-数据服务-存储-快速创建（URL+位置地缘组+订阅+复制）-创建存储帐户![](./media/storage-how-to-create-account-container/create-account.png)
-2. Lib存储帐户-右箭头  ![](./media/storage-how-to-create-account-container/enter-storage.png)
+1. 存储-数据服务-存储-快速创建（URL+位置地缘组+订阅+复制）-创建存储帐户![](./media/aog-storage-how-to-create-account-container/create-account.png)
+2. Lib存储帐户-右箭头  ![](./media/aog-storage-how-to-create-account-container/enter-storage.png)
 **Note**：存储账号创建完成后我们可以通过最下方的“管理访问密钥”按钮获取或者更新密钥。
-3.  容器-创建容器-名称![](./media/storage-how-to-create-account-container/create-container.png)
+3.  容器-创建容器-名称![](./media/aog-storage-how-to-create-account-container/create-container.png)
  
-4. 容器创建完成![](./media/storage-how-to-create-account-container/container-dashboard.png)
+4. 容器创建完成![](./media/aog-storage-how-to-create-account-container/container-dashboard.png)
  
  
  

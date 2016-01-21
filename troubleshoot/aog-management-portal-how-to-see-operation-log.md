@@ -32,12 +32,12 @@
 
 1. 登录Azure 门户网站，选择云服务
 
-	![](./media/management-portal-how-to-see-operation-log/choose-service.jpg)
+	![](./media/aog-management-portal-how-to-see-operation-log/choose-service.jpg)
  
 - 选择要查看的云服务->仪表板，可以查看相关的操作日志和启动日志
 
-	![](./media/management-portal-how-to-see-operation-log/open-log-from-dashboard.jpg)
+	![](./media/aog-management-portal-how-to-see-operation-log/open-log-from-dashboard.jpg)
  
 - 选择要查看哪个时间段的操作记录
 
-	![](./media/management-portal-how-to-see-operation-log/direct-to-management-service.jpg)
+	![](./media/aog-management-portal-how-to-see-operation-log/direct-to-management-service.jpg)
