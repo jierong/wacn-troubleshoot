@@ -1,3 +1,13 @@
+<properties 
+	pageTitle="如何为Azure存储的Blob创建SAS（共享访问签名）令牌" 
+	description="如何为Blob创建SAS令牌" 
+	services="storage" 
+	documentationCenter="" 
+	authors=""
+	manager="" 
+	editor=""/>
+<tags ms.service="storage" ms.date="" wacn.date="2/1/2016"/>
+
 #如何为Azure存储的Blob创建SAS（共享访问签名）令牌
 
 存储账号名称和存储账号密钥是操作存储账号的重要的信息，一旦存储账号外泄，存储账号内的资源将会完全暴露。SAS可以帮助我们避免存储账户密钥的泄露，请阅读[这篇文章](http://www.windowsazure.cn/documentation/articles/storage-dotnet-shared-access-signature-part-1/)了解SAS的详细的概念，文章中也包含了令牌中各个参数的含义。

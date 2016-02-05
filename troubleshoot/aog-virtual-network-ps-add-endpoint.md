@@ -1,3 +1,13 @@
+<properties 
+	pageTitle="通过PowerShell的方式增加虚拟机终结点" 
+	description="如何通过ps为虚拟机增加终结点" 
+	services="virtual machine" 
+	documentationCenter="" 
+	authors=""
+	manager="" 
+	editor=""/>
+<tags ms.service="virtual machine" ms.date="" wacn.date="2/1/2016"/>
+
 #通过PowerShell的方式增加虚拟机终结点
 
 关于虚拟机终结点的概念请阅读：[如何设置虚拟机的终结点](http://www.windowsazure.cn/zh-cn/documentation/articles/virtual-machines-set-up-endpoints/)

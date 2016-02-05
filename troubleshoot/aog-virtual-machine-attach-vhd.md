@@ -1,3 +1,13 @@
+<properties 
+	pageTitle="如何为虚拟机附加磁盘" 
+	description="如何使用ps为虚拟机附加磁盘" 
+	services="virtual machine" 
+	documentationCenter="" 
+	authors=""
+	manager="" 
+	editor=""/>
+<tags ms.service="virtual machine" ms.date="" wacn.date="2/1/2016"/>
+
 #如何为虚拟机附加磁盘
 
 关于如何在门户网站上附加磁盘请阅读[这篇文章](http://www.windowsazure.cn/documentation/articles/storage-windows-attach-disk/)

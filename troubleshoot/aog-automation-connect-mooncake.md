@@ -1,3 +1,13 @@
+<properties 
+	pageTitle="通过Azure Active Directory认证Azure 自动化服务" 
+	description="如何在Azure自动化服务中使用Azure AD认证" 
+	services="automation" 
+	documentationCenter="" 
+	authors=""
+	manager="" 
+	editor=""/>
+<tags ms.service="automation" ms.date="" wacn.date="2/1/2016"/>
+
 #通过Azure Active Directory认证Azure 自动化服务
 
 关于Azure 自动化的详细概念请阅读[这篇文章](http://www.windowsazure.cn/home/features/automation/)。
