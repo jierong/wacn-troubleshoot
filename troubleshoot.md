@@ -66,6 +66,12 @@
 
 介绍如何以PowerShell的方式增加虚拟机的终结点，以及如何批量的增加虚拟机的终结点
 
+[通过Azure Active Directory认证Azure 自动化服务](/documentation/articles/aog-automation-connect-mooncake)
+
+ 更新日期: 2/1/2016 
+
+介绍如何通过Azure Active Directory来授权Azure自动化操作。
+
 
 ##数据服务
 
@@ -87,11 +93,7 @@
 
 介绍如何以PowerShell及Rest API的方式为Azure存储的Blob创建共享访问签名。
 
-[通过Azure Active Directory认证Azure 自动化服务](/documentation/articles/aog-automation-connect-mooncake)
 
- 更新日期: 2/1/2016 
-
-介绍如何通过Azure Active Directory来授权Azure自动化操作。
 
 
 ##应用服务
