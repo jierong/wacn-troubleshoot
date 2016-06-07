@@ -20,7 +20,7 @@
 ## <a id="create"></a>如何创建自动化账号和Runbook
  
 关于Azure Automation功能的使用请参考链接：
-http://www.windowsazure.cn/documentation/articles/automation-create-runbook-from-samples/
+https://www.azure.cn/documentation/articles/automation-create-runbook-from-samples/
  
 首先，我们需要创建一个自动化账号（Automation Account）：
 
@@ -60,7 +60,7 @@ http://www.windowsazure.cn/documentation/articles/automation-create-runbook-from
 
 ![](./media/aog-automation-how-to-turn-on-off-vm/define-credential-name-password.jpg)
 
-**注意**： 这个步骤中的用户是通过AAD创建出来的，我们可以参考[这个链接](https://msdn.microsoft.com/library/azure/hh967632.aspx)来了解如何创建AAD用户。本例子是使用管理账号来做的， 
+**注意**： 这个步骤中的用户是通过AAD创建出来的，我们可以参考[这个链接](https://msdn.microsoft.com/zh-cn/library/azure/hh967632.aspx)来了解如何创建AAD用户。本例子是使用管理账号来做的， 
 
 完成后保存。
  
@@ -136,5 +136,5 @@ JOB执行结束后，可以看到我们的虚拟机已经成功启动了。
 - [变量（Variable）](https://technet.microsoft.com/zh-cn/library/dn919925.aspx)
 - [计划（Schedule）](https://technet.microsoft.com/zh-cn/library/dn919914.aspx)
 - [创作自动化 Runbook](https://technet.microsoft.com/zh-cn/library/dn469262.aspx)
-- [Getting Started with NEW Microsoft Azure Automation preview feature](http://blogs.technet.com/b/keithmayer/archive/2014/04/04/step-by-step-getting-started-with-windows-azure-automation.aspx)
+- [Getting Started with NEW Azure Automation preview feature](http://blogs.technet.com/b/keithmayer/archive/2014/04/04/step-by-step-getting-started-with-windows-azure-automation.aspx)
 - [面向 IT 专业人员的脚本资源](https://gallery.technet.microsoft.com/scriptcenter/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=SC%20Automation%20Product%20Team&f%5B0%5D.Text=SC%20Automation%20Product%20Team&f%5B1%5D.Type=RootCategory&f%5B1%5D.Value=WindowsAzure&f%5B1%5D.Text=Windows%20Azure)

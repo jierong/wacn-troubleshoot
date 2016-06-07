@@ -6,7 +6,7 @@
 	authors=""
 	manager="" 
 	editor=""/>
-<tags ms.service="virtual machine" ms.date="" wacn.date="12/18/2015"/>
+<tags ms.service="virtual-machine" ms.date="" wacn.date="12/18/2015"/>
 
 #调整虚拟机的尺寸
 
@@ -23,7 +23,7 @@
 
 - 修改尺寸后我的虚拟机的IP是否会变？
 
-	在修改虚拟机尺寸后虚拟机的IP可能会改变，如果业务逻辑中不希望IP变化的话，请尝试“保留IP”，关于更多有关保留IP的内容，请阅读：http://www.windowsazure.cn/documentation/articles/virtual-networks-reserved-public-ip
+	在修改虚拟机尺寸后虚拟机的IP可能会改变，如果业务逻辑中不希望IP变化的话，请尝试“保留IP”，关于更多有关保留IP的内容，请阅读：https://www.azure.cn/documentation/articles/virtual-networks-reserved-public-ip
 
 ## <a id="detail"></a>详细步骤
 
