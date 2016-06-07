@@ -37,7 +37,7 @@
  
 4. 从新虚拟机的仪表板中，单击“配置”，您会看到该虚拟机现在是新可用性集的一个成员
 
-	![](./media/aog-virtual-machine-add-vm-to-availability-group/show-result.jpg) 
+	![](./media/aog-virtual-machine-add-vm-to-availability-group/show-result.png) 
  
 ## <a id="note"></a>注意事项
 
