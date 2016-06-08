@@ -45,7 +45,7 @@
 	$containerName = 'sastest'
 
 	#PowerShell的方式创建storage操作的上下文
-	$storageContext = New-AzureStorageContext -StorageAccountName $storageAccountName -StorageAccountKey $storageAccountKey
+	$storageContext = New-AzureStorageContext -Environment AzureChinaCloud -StorageAccountName $storageAccountName -StorageAccountKey $storageAccountKey
 	
 	#创建一个新的容器
 	$container = New-AzureStorageContainer -Context $storageContext -Name $containerName
@@ -101,7 +101,7 @@ PowerShell指令：[New-AzureStorageContainerSASToken](https://msdn.microsoft.co
 	$containerNameWithPolicy = 'sastestwithpolicy'
 
 	#PowerShell的方式创建storage操作的上下文
-	$storageContext = New-AzureStorageContext -StorageAccountName $storageAccountName -StorageAccountKey $storageAccountKey
+	$storageContext = New-AzureStorageContext -Environment AzureChinaCloud -StorageAccountName $storageAccountName -StorageAccountKey $storageAccountKey
 	
 	#创建一个新的容器
 	$container = New-AzureStorageContainer -Context $storageContext -Name $containerNameWithPolicy
