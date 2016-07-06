@@ -73,6 +73,20 @@
 介绍如何通过Azure Active Directory来授权Azure自动化操作。
 
 
+
+[Azure Windows虚拟机常见导致无法远程的操作](/documentation/articles/aog-virtual-machine-windows-scenarios-unable-to-remote)
+
+ 更新日期: 7/6/2016 
+
+对Azure虚拟机的一些操作可能会导致无法远程连接，本文罗列了些常见的场景。
+
+[Azure Linux虚拟机常见导致无法远程的操作](/documentation/articles/aog-virtual-machine-linux-scenarios-unable-to-remote)
+
+ 更新日期: 7/6/2016 
+
+对Azure虚拟机的一些操作可能会导致无法远程连接，本文罗列了些常见的场景。
+
+
 ##数据服务
 
 [如何创建存储账号及容器](/documentation/articles/troubleshoot/aog-storage-how-to-create-account-container)
