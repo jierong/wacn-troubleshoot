@@ -6,9 +6,9 @@
 	authors=""
 	manager="" 
 	editor=""/>
-<tags ms.service="virtual-machine" ms.date="" wacn.date="07/06/2016"/>
+<tags ms.service="virtual-machines-aog" ms.date="" wacn.date="07/06/2016"/>
 
-# Azure Linux虚拟机常见导致无法远程的操作
+# Azure Linux 虚拟机常见导致无法远程的操作
 
 ###对Azure虚拟机的一些操作可能会导致无法远程连接，本文罗列了以下导致不能远程连接的场景：
 
@@ -43,11 +43,11 @@
 
 由于针对该文件的修改方法多种多样，所以这里只举例说明，例如我们在修改sshd配置文件的时候，在某一行手误多输入了一个字母：
 
-![](./media/aog-virtual-machine-linux-scenarios-unable-to-remote/scenario-02-01.png) 
+![](./media/aog-virtual-machines-linux-scenarios-unable-to-remote/scenario-02-01.png) 
  
 结果sshd服务就无法正常启动了：
 
- ![](./media/aog-virtual-machine-linux-scenarios-unable-to-remote/scenario-02-02.png) 
+ ![](./media/aog-virtual-machines-linux-scenarios-unable-to-remote/scenario-02-02.png) 
  
 ##<a id="scenario03"></a>场景3
 错误地配置了虚拟机的防火墙（firewalld），iptables等等：
@@ -58,9 +58,9 @@
 ##<a id="scenario04"></a>场景4 
 同一个版本的Linux映像创建出来的虚拟机的系统盘UUID相同，例如使用平台映像创建两台CentOS6.5的虚拟机，系统盘UUID都为8fc4d768-29cd-462c-a7ab-5bf4bcfa9fa2：
 
-  ![](./media/aog-virtual-machine-linux-scenarios-unable-to-remote/scenario-04-01.png) 
+  ![](./media/aog-virtual-machines-linux-scenarios-unable-to-remote/scenario-04-01.png) 
 
-  ![](./media/aog-virtual-machine-linux-scenarios-unable-to-remote/scenario-04-02.png) 
+  ![](./media/aog-virtual-machines-linux-scenarios-unable-to-remote/scenario-04-02.png) 
  
 因此如果将虚拟机的系统盘挂载到用相同平台映像创建其他机器上作为数据盘，不要使用UUID挂载（可以使用device名称来挂载），否则可能因为UUID相同导致挂载错误的系统盘引起启动失败，导致无法连接（如果这种情况发生，分离磁盘可能会将正常的系统盘分离下来）。
  
@@ -76,7 +76,7 @@
 
 创建完成后，如果虚拟机重启，device名称会发生变化，从127开始向前递减：
  
-  ![](./media/aog-virtual-machine-linux-scenarios-unable-to-remote/scenario-05-01.png) 
+  ![](./media/aog-virtual-machines-linux-scenarios-unable-to-remote/scenario-05-01.png) 
 
 如果在fstab文件中使用device名称进行挂载，会导致重启后，系统找不到/dev/md0，/dev/md1，/dev/md2，从而挂载失败无法启动。所以建议使用UUID进行挂载。
  
